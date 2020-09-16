@@ -2,6 +2,7 @@ import React from 'react';
 import GlobalStyles from "./globalStyles"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import { Navbar} from "./components/index"
+import Home from "./pages/Home/Home"
 
 function App() {
   return (
@@ -9,13 +10,13 @@ function App() {
       <Router>
         <GlobalStyles/>
         <Navbar/>
-        {/* <Switch>
+        <Switch>
           <Route exact="/" component={Home}/>
-          <Route exact="/galery" component={Galery}/>
+          {/* <Route exact="/galery" component={Galery}/>
           <Route exact="/contact" component={Contact}/>
-          <Route exact="/about" component={About}/>
+          <Route exact="/about" component={About}/> */}
         </Switch>
-        <Footer/> */}
+        {/* <Footer/> */}
       </Router>
     </>
   );

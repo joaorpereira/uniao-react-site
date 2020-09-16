@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 
 export const Nav = styled.div`
     background: #004a2f;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
     height: 14vh;
     display: flex;
     justify-content: center;
@@ -56,17 +57,18 @@ export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     list-style: none;  
+    justify-content:space-between;
 
     @media screen and (max-width: 960px){
         display: flex;
         flex-direction: column;
         padding-top: 15px;
-        width: 70%;
-        height: 88vh;
+        width: 100%;
+        height: 89vh;
         position: absolute;
-        top: 80px;
+        top: 85px;
         left: ${({ show }) => ( show ? 0 : "-100%" )};
-        opacity: .8;
+        opacity: 1;
         transition: all 0.3s ease;
         background: #004a2f;
     }
@@ -74,6 +76,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 15vh;
+    color: #fff;
     border-bottom: 3px solid transparent;
 
     &:hover{
@@ -81,7 +84,10 @@ export const NavItem = styled.li`
     }
     
     @media screen and (max-width: 960px){
-        width: 70%;
+        font-weight: 700;
+        letter-spacing: 1px;
+        height: 10vh;
+
         &:hover{
         border-bottom: none;
         }
@@ -97,7 +103,7 @@ export const NavLink = styled(Link)`
     padding: 0.5rem 1rem;
     height: 100%;
     transition: 0.3s;
-
+   
     &:hover{
         color: #04D361;        
     }
@@ -133,6 +139,5 @@ export const NavBtnLink = styled(Link)`
     align-items:center;
     text-decoration: none;
     padding: 8px 16px;
-    width: 100%;
-    height: 120px;
+    height: 120px;    
 `;

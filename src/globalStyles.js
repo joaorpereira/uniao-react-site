@@ -16,15 +16,23 @@ export const Container = styled.div`
     padding-right: 50px;
     padding-left: 50px;
 
-    @media screen and (max-width: 990px){
-        padding-right: 25px;
-        padding-left: 25px;
+    @media screen and (max-width: 500px){
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 0 auto;
     }
+    @media screen and (max-width: 800px){
+        padding-right: 50px;
+        padding-left: 50px;
+        margin: 0 auto;
+    }
+
+
 `;
 
 export const Button = styled.button`
-    background: ${({primary}) => (primary ? "#04BF58" : "#04D361")};
-    padding: ${({big}) => (big ? "12px 60px" : "8px 15px")};
+    background: ${({primary}) => (primary ? "#04D361" : "#04BF58")};
+    padding: ${({big}) => (big ? "12px 80px" : "8px 15px")};
     font-size: ${({fontBig}) => (fontBig ? "20px" : "18px")};
     outline: none;
     border: none;
@@ -33,15 +41,17 @@ export const Button = styled.button`
     white-space: nowrap;
     color: #fff;
     font-weight:bold;
+    text-align: center;
     letter-spacing: 1px;
+    margin: ${({marginTrue}) => (marginTrue ? "15px 20px" : "0px 0px 0px 0px")};
+    transition: all 0.3s ease-in-out;
 
-    &:hover{
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-        background: ${({primary}) => (primary ? "#04D361" : "#04BF58")};
+    &:hover{        
+        background: ${({primary}) => (primary ? "#04BF58" : "#04D361")};
     }
     @media screen and (max-width: 960px){
-       width: 70%;
+       width: 100%;
+       margin: ${({marginTrue}) => (marginTrue ? "10px 0px" : "0px")};
     }
     
 `;
