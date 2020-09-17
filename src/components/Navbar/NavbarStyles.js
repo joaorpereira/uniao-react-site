@@ -61,12 +61,12 @@ export const NavMenu = styled.ul`
 
     @media screen and (max-width: 960px){
         display: flex;
+        justify-content:space-evenly;
         flex-direction: column;
-        padding-top: 15px;
         width: 100%;
         height: 89vh;
         position: absolute;
-        top: 85px;
+        top: 80px;
         left: ${({ show }) => ( show ? 0 : "-100%" )};
         opacity: 1;
         transition: all 0.3s ease;
