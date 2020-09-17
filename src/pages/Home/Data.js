@@ -1,0 +1,16 @@
+export const homeObjOne = {
+    lightBg : true,
+    primary: false, 
+    imgStart: "", 
+    lightTopLine: false, 
+    lightText: false, 
+    lightTextDesc: false, 
+    buttonLabelOne: "Galeria", 
+    buttonLabelTwo: "Contato", 
+    description: "Ano de Fundação 1918.", 
+    headline: "União Sport Club Itabirito", 
+    topLine: "Veteranos",
+    start: "true", 
+    img: require("../../assets/logo.png"), 
+    alt: "Image",
+}
