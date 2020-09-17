@@ -138,8 +138,7 @@ export const Img = styled.img`
     display: inline-block;
     max-height: 400px; 
     filter: brightness(0) invert(1);
-    opacity: 0.55;
-
+    opacity: 0.50;
     @media screen and (max-width: 1500px) {
         max-height: 340px; 
         transform: translate(0%, -10%);
