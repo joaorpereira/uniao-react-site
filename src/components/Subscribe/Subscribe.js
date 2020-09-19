@@ -1,5 +1,5 @@
 import React from "react"
-import { FooterContainer, FooterSubscription, FooterSubHeading, Form, FormInput} from './subscribeStyle'
+import { FooterContainer, FooterSubscription, FooterSubHeading, Form, FormInput} from './subStyle'
 import { Button } from "../../globalStyles"
 
 const Subscribe = () => {
@@ -7,7 +7,7 @@ const Subscribe = () => {
         <FooterContainer>
                 <FooterSubscription>
                     <FooterSubHeading>
-                        Entre em contato conosco!
+                        Inscreva-se para receber nossos conteúdos!
                     </FooterSubHeading>
                     <Form>
                         <FormInput name="email" type="email" placeholder="Email" />

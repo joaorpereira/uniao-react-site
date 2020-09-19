@@ -1,10 +1,11 @@
 import React from 'react'
-import FormContact from '../../components/FormContact/FormContact'
+import { Subscribe } from "../../components"
 
 function Galery() {
     return (
-        <>
-            <FormContact/>
+        <>  
+        galeria
+            <Subscribe paddingPage/>
         </>
     )
 }

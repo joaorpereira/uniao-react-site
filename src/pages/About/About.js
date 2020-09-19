@@ -1,10 +1,13 @@
 import React from 'react'
-import FormContact from '../../components/FormContact/FormContact'
+import { Section, Subscribe, Depoiments } from "../../components"
+import { aboutObj, testimonyObj} from './Data'
 
 function About() {
     return (
-        <>
-            <FormContact/>
+        <>  
+            <Section {...aboutObj}/>
+            <Depoiments {... testimonyObj}/>
+            <Subscribe/>
         </>
     )
 }

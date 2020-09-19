@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-// import { FormSection, Title, FormInput, Form, Label, Input, Img, FormWrapper, TextArea} from "./formStyle"
-
 export const FormSection = styled.div`
     color: #1b1919;
     padding: 50px 0px;
