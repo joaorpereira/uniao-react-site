@@ -1,26 +1,20 @@
-import {useState} from "react"
+import {useState,} from "react"
 
-const useForm = () => {
+const useForm = (initialState) => {
 
-    const [inputValues, setInputValues] = useState({
-        username: "",
-        phone: "",
-        email: "",
-        message: "",
-    });
+    const [values, setValues] = useState(initialState);
 
-    const handleChange = (event) => {
-        const {name, value} = event.target
-        setInputValues({...inputValues, [name] : value})
+    const handleChange = (name, value) => {
+        // const {name, value} = event.target
+        const newForm = {...values, [name] : value}
+        setValues(newForm)
     }
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const resetState = () => {
+        setValues(initialState);
+    };
 
-    }
-
-    return {inputValues, handleSubmit, handleChange}
-
+    return {values, resetState, handleChange}
 }
 
 export default useForm;
