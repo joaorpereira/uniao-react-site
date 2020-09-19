@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoSection = styled.div`
     color: #fff;
-    padding: 140px 0px;
+    padding: ${({paddingPage}) => (paddingPage ? "75px 0px;" : "135px 0px;")};
     background: ${({lightBG}) => (lightBG ? "#fff" : "#004a2f")};
 `;
 

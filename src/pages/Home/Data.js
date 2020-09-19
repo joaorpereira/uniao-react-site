@@ -1,4 +1,5 @@
 export const homeObjOne = {
+    paddingPage: false,
     lightBg : true,
     primary: false, 
     imgStart: "", 
@@ -16,6 +17,7 @@ export const homeObjOne = {
 }
 
 export const aboutObj = {
+    paddingPage: false,
     lightBG : true,   
     imgStart: "", 
     lightText: false, 
@@ -31,6 +33,7 @@ export const aboutObj = {
 }
 
 export const galeryObj = {
+    paddingPage: false,
     lightBG : false,   
     imgStart: "start", 
     lightText: true, 
@@ -46,6 +49,7 @@ export const galeryObj = {
 }
 
 export const gamesObj = {
+    paddingPage: false,
     lightBG : true,   
     imgStart: "", 
     lightText: false, 

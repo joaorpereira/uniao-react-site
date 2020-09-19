@@ -4,9 +4,9 @@ import { Container, Button } from "../../globalStyles"
 import { InfoSection, Row, Column, TextWrapper, HeadTitle, Paragraph, ImgWrapper, Img} from "./sectionStyle";
 
 
-function Section({lightBG, lightText, imgStart, title, ligthTextParag, paragraph, buttonLabel, start, img, alt, primary}) {
+function Section({paddingPage, lightBG, lightText, imgStart, title, ligthTextParag, paragraph, buttonLabel, start, img, alt, primary}) {
     return (
-        <InfoSection lightBG={lightBG}>
+        <InfoSection paddingPage={paddingPage} lightBG={lightBG}>
             <Container>
                 <Row imgStart={imgStart}>
                     <Column>

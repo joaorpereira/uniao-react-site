@@ -49,10 +49,10 @@ function Navbar(primary) {
                                 <NavLink to="/">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="about">História</NavLink>
+                                <NavLink to="/about">História</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="galery">Galeria</NavLink>
+                                <NavLink to="/galery">Galeria</NavLink>
                             </NavItem>
                             <NavItemBtn>
                                 {button ? (
