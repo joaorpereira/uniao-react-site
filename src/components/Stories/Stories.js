@@ -1,18 +1,15 @@
 import React from 'react'
-import { DepoimentSection, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, SubTitle, Paragraph, HeadTitle } from "./depoStyle"
-import { Container } from "../../globalStyles"
-import {testimonyObj} from "../../pages/About/Data"
+import { StorySection, StoryContainer, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, SubTitle, Paragraph, HeadTitle } from "./storyStyle"
+import { storyObj } from "../../pages/Home/Data"
 
-const Testimony = () => {
-    const posts = testimonyObj
-    console.log(posts)
-    
+const Stories = () => {
+    const posts = storyObj
+   
     return (
         <>
-             <DepoimentSection>
+            <StorySection>
                 <HeadTitle>Depoimentos</HeadTitle>
-                <hr/>
-                <Container>                 
+                <StoryContainer>                 
                     {posts.map(post => (
                         <Post key={post.id}>   
                             <PostWrapper>
@@ -23,18 +20,16 @@ const Testimony = () => {
                                     <InfoItem>
                                         <Title>{post.name}</Title>
                                         <SubTitle>Historia</SubTitle>
-                                        <Paragraph>
-                                                {post.text}
-                                        </Paragraph>
+                                        <Paragraph>{post.text}</Paragraph>
                                     </InfoItem>
                                 </InfoWrapper>
                             </PostWrapper>       
                         </Post>                          
                     ))}                                      
-                </Container>
-            </DepoimentSection>            
+                </StoryContainer>
+            </StorySection>            
         </>
     )
 }
 
-export default Testimony 
+export default Stories 
