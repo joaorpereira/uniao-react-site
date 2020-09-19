@@ -1,85 +1,80 @@
 import styled from "styled-components"
 
-export const DepoimentSection = styled.div`
+export const StorySection = styled.div`
     color: #1b1919;
-    padding: 25px 0px;
-    background: #fff;
+    padding: 75px 0px ;
+    background: #04D361;
     height: 100%;
     width: 100%;   
     margin: 0px auto;
-    
-    hr {
-        border: 0;
-        border-top: 1px solid #1b1919;
-        opacity:0.4;
-        margin-bottom: 100px;
-        width: 20%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
 
     @media screen and (max-width: 800px){
-        hr {
-            display: none
-        }        
+        padding: 50px 0px ;
     }
 `;
 
+export const StoryContainer = styled.div`
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+`;
 
 export const HeadTitle = styled.h1`
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 5rem;
     font-size: 48px;
     line-height: 1.1;
-    color: ${({lightText}) => (lightText ? "#fff" : "#1b1919")};
+    color: #1b1919;
+    letter-spacing: 2px;
     
     @media screen and (max-width: 800px){
         text-align: center;
-        margin-bottom: 4rem;
-        font-size: 40px;
+        margin-bottom: 4.5rem;
+        font-size: 35px;
     }
 `;
 
 export const Post = styled.div`
-    max-width: 900px;    
-    height: 16rem;
+    background-color: #fff;
+    width: 300px;    
+    height: 500px;
     display: flex;
     align-items: center;
     padding: 2rem 5rem;
-    margin: 0 auto 5rem;
+    margin: 0;
+    border: 1px solid #E6E6F0; 
     border-radius: 0.8rem;
-    box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2); 
 
     @media screen and (max-width: 800px){
-        flex-direction: column;
-        height: 100%;
+        margin-bottom: 4rem;
+        height: 450px;
+        width: 280px;       
+        justify-items: flex-start;
     }
 `;
 
 export const PostWrapper = styled.div`
-    max-width: 900px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    @media screen and (max-width: 800px){
-        flex-direction: column;
-    }
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;  
 `;
 
 export const ImageWrapper = styled.div`
-    min-width: 18rem;
-    max-width: 18rem;
+    min-width: 15rem;
+    max-width: 15rem;
     height: 13rem;
-    transform: translateX(-8rem);
-    position: relative;
+    transform: translate(-50%, 0%);
+    position: relative;    
 
     @media screen and (max-width: 800px){
-        transform: translate(0, -3rem);
-        min-width: 14rem;
-        max-width: 14rem;
-        height: 12rem;
-    }
+        margin-bottom: -2.5rem;
+        transform: translate(-25%, -30%);
+    } 
 `;
 
 export const Img = styled.img`
@@ -94,6 +89,7 @@ export const InfoWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate(-20%, 0%);
 `;
 
 export const InfoItem = styled.div`
@@ -105,10 +101,10 @@ export const InfoItem = styled.div`
 
 export const Title = styled.h1`
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin: 1.5rem 0 0rem;
-    color: #4facfe;
+    color: #1b1919;
 
     @media screen and (max-width: 800px){
         margin: 0;
@@ -117,14 +113,19 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
     display: block;
-    color: rgba(0,0,0,0.5);
-    font-size: 1.2rem;
+    color: #4facfe;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 0.5rem 0;
 `;
 
 export const Paragraph = styled.p`
     text-align: justify;
-    color: rgba(0,0,0,.7);
-    margin-bottom: 1rem;
+    color: #9C98A6; 
+    font-size: 0.9rem;
+    @media screen and (max-width: 800px){
+        width: 90%;       
+    }
 `;
+
+

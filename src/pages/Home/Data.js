@@ -63,3 +63,27 @@ export const gamesObj = {
     alt: "About Image",
     showPlus: false,
 }
+
+export const storyObj = [
+    {   
+        id: 1,
+        name: "João",
+        image: require("../../assets/people.jpeg"),
+        alt: "About Image",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        id: 2,
+        name: "Amanda",
+        image: require("../../assets/people.jpeg"),
+        alt: "About Image",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    },
+    {
+        id: 3,
+        name: "Pedro",
+        image: require("../../assets/people.jpeg"),
+        alt: "About Image",
+        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+]

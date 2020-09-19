@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 export const InfoSection = styled.div`
     color: #fff;
-    padding: ${({paddingPage}) => (paddingPage ? "75px 0px;" : "135px 0px;")};
+    padding: ${({paddingPage}) => (paddingPage ? "100px 0px;" : "135px 0px;")};
     background: ${({lightBG}) => (lightBG ? "#fff" : "#004a2f")};
+
+    @media screen and (max-width: 800px){
+        padding: 60px 0px ;
+    }
 `;
 
 export const Row = styled.div`
@@ -47,10 +51,12 @@ export const HeadTitle = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     color: ${({lightText}) => (lightText ? "#fff" : "#1b1919")};
+
     @media screen and (max-width: 800px){
         text-align: center;
         letter-spacing: 2px;
         margin-bottom: 40px;
+        font-size: 40px;
     }
 `;
 
