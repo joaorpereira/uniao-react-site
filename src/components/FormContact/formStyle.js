@@ -6,7 +6,7 @@ export const FormSection = styled.div`
     color: #1b1919;
     padding: 50px 0px;
     background: #fff;
-    height: 90vh;
+    height: 100vh;
     width:100%;
 
     @media screen and (max-width: 800px) {
@@ -15,7 +15,7 @@ export const FormSection = styled.div`
 `;
 
 export const FormWrapper = styled.div`
-    max-width: 950px;
+    max-width: 1000px;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -25,14 +25,14 @@ export const FormWrapper = styled.div`
 
 export const Title = styled.h1`
     text-align:center;
-    margin-bottom: 3.5rem;
-    font-size: 30px;
+    margin-bottom: 3rem;
+    font-size: 28px;
     line-height: 1.1;
 
     @media screen and (max-width: 800px) {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 1;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
     }
 `;
 
@@ -45,15 +45,15 @@ export const Img = styled.img`
 `;
 
 export const Form = styled.form`
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     max-width: 400px;
-
 `;
+
 export const FormInput = styled.div`
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     width: 100%;
@@ -64,7 +64,7 @@ export const FormInput = styled.div`
         color: #f00e0e;
     }
 
-    &:last-child{
+    &:nth-child(4){
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -77,12 +77,16 @@ export const FormInput = styled.div`
             width: 100%;
         }
     }
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: 0.5rem;
+    }
 `;
 
 export const Label = styled.label`
     text-align: left;
     width: 140px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     padding: 10px 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -90,7 +94,7 @@ export const Label = styled.label`
     color: #1b1919;
     font-weight: 600;
 
-    &:last-child{
+    &:nth-child(4){
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
@@ -106,7 +110,7 @@ export const Input = styled.input`
     text-align: left;
     width: 150px;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     padding: 10px 10px 10px 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -118,14 +122,15 @@ export const Input = styled.input`
     border: none;
 
     ::placeholder {
-        color: #fff;
+        color: #ccc;
         font-size: 1rem;
     }
 `;
 
 export const TextArea = styled.textarea`
+    display: flex;
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     padding: 10px 20px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -137,7 +142,7 @@ export const TextArea = styled.textarea`
     border: none;
 
     ::placeholder {
-        color: #fff;
+        color: #ccc;
         font-size: 1rem;
     }
 
