@@ -93,7 +93,7 @@ export const HeadTitle = styled.h1`
     font-size: 4.5rem;
     line-height: 1.1;
     letter-spacing: 1px;
-    color: ${({lightText}) => (lightText ? "#f7f8fa" : "#f7f8fa")};
+    color: ${({lightText}) => (lightText ? "##fff" : "#fff")};
     margin-bottom: 3rem;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
     @media screen and (max-width: 800px){

@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
 `;
 
 export const FooterSubscription = styled.section`
-    display: flex;
+    display: ${({showSubscription}) => (showSubscription ? "none" : "flex")};
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ export const FormInput = styled.input`
     }
 `;
 
-export const SocialMedia = styled.section`
+export const SocialSection = styled.section`
     max-width: 1000px;
     width: 100%;
 `;
@@ -125,3 +125,4 @@ export const NavIcon = styled.img`
         display: none;
     }
 `;
+

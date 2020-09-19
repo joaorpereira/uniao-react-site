@@ -46,7 +46,7 @@ export const HeadTitle = styled.h1`
     margin-bottom: 35px;
     font-size: 48px;
     line-height: 1.1;
-    color: ${({lightText}) => (lightText ? "#fff" : "#004a2f")};
+    color: ${({lightText}) => (lightText ? "#fff" : "#1b1919")};
     @media screen and (max-width: 800px){
         text-align: center;
         letter-spacing: 2px;

@@ -1,14 +1,14 @@
 import React from "react"
 import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa"
-import { FooterContainer, FooterSubscription, FooterSubHeading, Form, FormInput, SocialMedia, SocialLogo, SocialMediaWrap, SocialIcons, WebsiteRights, SocialIconLink, NavIcon} from './FooterStyles'
+import { FooterContainer, FooterSubscription, FooterSubHeading, Form, FormInput, SocialSection, SocialLogo, SocialMediaWrap, SocialIcons, WebsiteRights, SocialIconLink, NavIcon} from './footerStyle'
 import { Button } from "../../globalStyles"
 import Logo from "../../assets/logo.png"
 
 const Footer = () => {
     return (
         <FooterContainer>
-            <SocialMedia>
-                <FooterSubscription>
+            <SocialSection>
+                <FooterSubscription >
                     <FooterSubHeading>
                         Entre em contato conosco!
                     </FooterSubHeading>
@@ -17,8 +17,8 @@ const Footer = () => {
                         <Button fontBig>Enviar</Button>
                     </Form>
                 </FooterSubscription>
-            </SocialMedia>
-            <SocialMedia>
+            </SocialSection>
+            <SocialSection>
                 <SocialMediaWrap>
                     <SocialLogo>                            
                         <NavIcon src={Logo}/>
@@ -41,8 +41,7 @@ const Footer = () => {
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>
-            </SocialMedia>
-
+            </SocialSection>
         </FooterContainer>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import { Container, Button } from "../../globalStyles"
-import { InfoSection, Row, Column, TextWrapper, HeadTitle, Paragraph, ImgWrapper, Img} from "./SectionStyles";
+import { InfoSection, Row, Column, TextWrapper, HeadTitle, Paragraph, ImgWrapper, Img} from "./sectionStyle";
 
 
-function Section({lightBG, lightText, imgStart, title, ligthTextParag, paragraph, buttonLabel, start, img, upperText, alt, primary, showPlus}) {
+function Section({lightBG, lightText, imgStart, title, ligthTextParag, paragraph, buttonLabel, start, img, alt, primary}) {
     return (
         <InfoSection lightBG={lightBG}>
             <Container>
