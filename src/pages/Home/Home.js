@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Section } from "../../components"
+import { Hero, Section, Subscribe } from "../../components"
 import {homeObjOne, aboutObj, galeryObj, gamesObj} from './Data'
 
 function Home() {
@@ -9,6 +9,7 @@ function Home() {
             <Section {...aboutObj}/>
             <Section {...galeryObj}/>
             <Section {...gamesObj}/>
+            <Subscribe/>
         </>
     )
 }
