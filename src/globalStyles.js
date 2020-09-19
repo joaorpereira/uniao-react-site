@@ -26,30 +26,30 @@ export const Container = styled.div`
         padding-left: 50px;
         margin: 0 auto;
     }
-
-
 `;
 
 export const Button = styled.button`
     background: ${({primary}) => (primary ? "#04D361" : "#04BF58")};
     padding: ${({big}) => (big ? "12px 80px" : "8px 15px")};
     font-size: ${({fontBig}) => (fontBig ? "20px" : "18px")};
+    text-transform: ${(upperText) => (upperText ? "capitalize" : "uppercase" )};
     outline: none;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     white-space: nowrap;
     color: #fff;
-    font-weight:bold;
+    font-weight: 600;
     text-align: center;
     letter-spacing: 1px;
-    margin: ${({marginTrue}) => (marginTrue ? "15px 20px" : "0px 0px 0px 0px")};
+    margin: ${({marginTrue}) => (marginTrue ? "15px 20px" : "0px")};
     transition: all 0.3s ease-in-out;
 
     &:hover{        
         background: ${({primary}) => (primary ? "#04BF58" : "#04D361")};
     }
     @media screen and (max-width: 960px){
+    font-weight: 500;
        width: 100%;
        margin: ${({marginTrue}) => (marginTrue ? "10px 0px" : "0px")};
     }

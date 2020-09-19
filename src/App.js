@@ -3,6 +3,7 @@ import GlobalStyles from "./globalStyles"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import { Navbar, Footer} from "./components/index"
 import Home from "./pages/Home/Home"
+import Contact from "./pages/Contact/Contact"
 
 function App() {
   return (
@@ -11,10 +12,10 @@ function App() {
         <GlobalStyles/>
         <Navbar/>
         <Switch>
-          <Route exact="/" component={Home}/>
-          {/* <Route exact="/galery" component={Galery}/>
-          <Route exact="/contact" component={Contact}/>
-          <Route exact="/about" component={About}/> */}
+          <Route path="/" exact component={Home}/>
+          {/* <Route exact="/galery" component={Galery}/> */}
+          <Route path="/contact" exact component={Contact}/>
+          {/* <Route exact="/about" component={About}/> */}
         </Switch>
         <Footer/>
       </Router>
@@ -23,3 +24,4 @@ function App() {
 }
 
 export default App;
+

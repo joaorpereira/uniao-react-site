@@ -3,10 +3,10 @@ import Logo from "../../assets/logo.png"
 import { FaTimes, FaBars } from 'react-icons/fa'
 import { IconContext } from "react-icons/lib"
 import { Button } from "../../globalStyles" 
-import { Nav, NavContainer, NavLogo, MobileIcon, NavIcon, NavMenu, NavItem, NavLink, NavItemBtn, NavBtnLink} from "./NavbarStyles"
+import { Nav, NavContainer, NavLogo, MobileIcon, NavIcon, NavMenu, NavItem, NavLink, NavItemBtn, NavBtnLink} from "./navbarStyle"
 
 
-function Navbar() {
+function Navbar(primary) {
     const [show, setShow] = useState(false)
     const [button, setButton] = useState(true)
 
@@ -57,10 +57,10 @@ function Navbar() {
                             <NavItemBtn>
                                 {button ? (
                                     <NavBtnLink to="/contact">
-                                        <Button primary>Contato</Button>
+                                        <Button primay={primary}>Contato</Button>
                                     </NavBtnLink>) : (
                                     <NavBtnLink to="/contact">
-                                        <Button fontBig primary>Contato</Button>
+                                        <Button big fontBig primary>Contato</Button>
                                     </NavBtnLink>                                   
                                 )}                                
                             </NavItemBtn>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import { Button, Container } from "../../globalStyles"
-import {HeroSection, HeroRow, HeroColumn, TextWrapper, TopLine, HeadTitle, ImgWrapper, Img, BtnContainer, BtnItem} from "./HeroStyles"
+import {HeroSection, HeroRow, HeroColumn, TextWrapper, TopLine, HeadTitle, ImgWrapper, Img, BtnContainer, BtnItem} from "./heroStyle"
 
 function Hero( { lightBg, imgStart, topLine, lightText, headline, lightTopLine, buttonLabelOne, buttonLabelTwo, start, img, alt } ) {
     return (

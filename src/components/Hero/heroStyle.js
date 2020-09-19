@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const HeroSection = styled.div`    
-    /* background: ${({ lightBg }) => (lightBg ? "#f4f9f4" : "#004a2f")}; */
-    background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("/images/background.jpg") center center/cover no-repeat; 
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("/images/background.jpg") center center/cover no-repeat;
     padding: 100px 70px;
     height: 100vh;    
     width: 100%;
@@ -13,10 +12,11 @@ export const HeroSection = styled.div`
 
     @media screen and (max-width: 600px){
         padding: 50px 25px;
+        margin-top:-5px;
     }
 
     @media screen and (max-width: 800px){
-        padding: 50px 25px;
+        padding: 80px 25px 50px 25px;
     }
 `;
 
@@ -93,9 +93,9 @@ export const HeadTitle = styled.h1`
     font-size: 4.5rem;
     line-height: 1.1;
     letter-spacing: 1px;
-    color: ${({lightText}) => (lightText ? "#f7f8fa" : "#85ef47")};
+    color: ${({lightText}) => (lightText ? "##fff" : "#fff")};
     margin-bottom: 3rem;
-    text-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
     @media screen and (max-width: 800px){
         font-size: 3.3rem;
         margin-bottom: 1.5rem;
@@ -138,7 +138,7 @@ export const Img = styled.img`
     display: inline-block;
     max-height: 400px; 
     filter: brightness(0) invert(1);
-    opacity: 0.50;
+    opacity: 0.90;
     @media screen and (max-width: 1500px) {
         max-height: 340px; 
         transform: translate(0%, -10%);
