@@ -1,11 +1,12 @@
 import React from 'react'
-import { Subscribe } from "../../components"
+import { GalerySection, Subscribe } from "../../components"
+import { galeryObj} from './Data'
 
 function Galery() {
     return (
         <>  
-        galeria
-            <Subscribe paddingPage/>
+            <GalerySection {...galeryObj}/>
+            <Subscribe/>
         </>
     )
 }
