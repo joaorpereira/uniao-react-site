@@ -1,5 +1,5 @@
 import React from 'react'
-import { StorySection, StoryContainer, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, SubTitle, Paragraph, HeadTitle } from "./storyStyle"
+import { StorySection, StoryContainer, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, Paragraph, HeadTitle } from "./storyStyle"
 import { storyObj } from "../../pages/Home/Data"
 
 const Stories = () => {
@@ -19,7 +19,6 @@ const Stories = () => {
                                 <InfoWrapper>
                                     <InfoItem>
                                         <Title>{post.name}</Title>
-                                        <SubTitle>Historia</SubTitle>
                                         <Paragraph>{post.text}</Paragraph>
                                     </InfoItem>
                                 </InfoWrapper>
