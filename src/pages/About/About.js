@@ -1,14 +1,14 @@
 import React from 'react'
-import { Section, Subscribe, Depoiments } from "../../components"
-import { aboutObj, testimonyObj} from './Data'
+import { Section, Subscribe, AboutSection } from "../../components"
+import { aboutObj, testimonyObj} from './aboutData'
 
 function About() {
     return (
-        <>  
+        <div className="page">  
             <Section {...aboutObj}/>
-            <Depoiments {... testimonyObj}/>
+            <AboutSection {... testimonyObj}/>
             <Subscribe/>
-        </>
+        </div>
     )
 }
 

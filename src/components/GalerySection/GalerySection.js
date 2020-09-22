@@ -1,6 +1,6 @@
 import React from 'react'
 import { GalerySection, GaleryContainer, Form, Label, FormWrapper, Input, Select, ImageWrapper, GaleryCard, Img, GaleryWrapper, GaleryItem, Title, Category, Date, HeadTitle } from "./galeryStyle"
-import { galeryObj } from "../../pages/Galery/Data"
+import { galeryObj } from "../../pages/Galery/galeryData"
 import useForm from '../../hooks/useForm'
 import { Button } from '../../globalStyles'
 

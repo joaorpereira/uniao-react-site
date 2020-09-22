@@ -1,7 +1,7 @@
 import React from 'react'
-import { DepoimentSection, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, SubTitle, Paragraph, HeadTitle } from "./depoStyle"
+import { DepoimentSection, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, SubTitle, Paragraph, HeadTitle } from "./aboutStyle"
 import { Container } from "../../globalStyles"
-import {testimonyObj} from "../../pages/About/Data"
+import { testimonyObj } from "../../pages/About/aboutData"
 
 const Testimony = () => {
     const posts = testimonyObj

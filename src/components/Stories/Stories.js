@@ -1,6 +1,6 @@
 import React from 'react'
 import { StorySection, StoryContainer, Post, ImageWrapper, Img, PostWrapper, InfoWrapper, InfoItem, Title, Paragraph, HeadTitle } from "./storyStyle"
-import { storyObj } from "../../pages/Home/Data"
+import { storyObj } from "../../pages/Home/homeData"
 
 const Stories = () => {
     const posts = storyObj
