@@ -1,26 +1,34 @@
 import React from 'react';
+import './App.css';
 import GlobalStyles from "./globalStyles"
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import { Navbar, Footer} from "./components/index"
-import Home from "./pages/Home/Home"
-import Contact from "./pages/Contact/Contact"
-import About from "./pages/About/About"
-import Galery from "./pages/Galery/Galery"
+import { Switch, Route } from "react-router-dom"
+import { Home, Contact, About, Galery } from "./pages/index"
+import { Navbar, Footer, ScrollToTop} from "./components/index"
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function App() {
   return (
     <>
-      <Router>
-        <GlobalStyles/>
-        <Navbar/>
-        <Switch>
-          <Route path="/" exact component={Home}/>      
-          <Route path="/about" exact component={About}/>
-          <Route path="/galery" exact component={Galery}/>
-          <Route path="/contact" exact component={Contact}/>
-        </Switch>
+      <GlobalStyles/>
+      <ScrollToTop/>
+      <Navbar/>
+        <Route render={({location}) => (
+          <TransitionGroup>
+            <CSSTransition
+              key={location.key}
+              timeout={300}
+              classNames="fade"
+            >
+              <Switch location={location}>
+                <Route path="/" exact component={Home}/>      
+                <Route path="/about" exact component={About}/>
+                <Route path="/galery" exact component={Galery}/>
+                <Route path="/contact" exact component={Contact}/>
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )}/>
         <Footer/>
-      </Router>
     </>
   );
 }

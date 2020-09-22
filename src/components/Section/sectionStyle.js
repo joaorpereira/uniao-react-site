@@ -4,7 +4,6 @@ export const InfoSection = styled.div`
     color: #fff;
     padding: ${({paddingPage}) => (paddingPage ? "100px 0px;" : "135px 0px;")};
     background: ${({lightBG}) => (lightBG ? "#fff" : "#004a2f")};
-
     @media screen and (max-width: 800px){
         padding: 60px 0px ;
     }
@@ -22,7 +21,7 @@ export const Column = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 15px 0px 30px;
     flex: 1;
     max-width: 50%;
     flex-basis: 50%;

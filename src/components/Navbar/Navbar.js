@@ -6,7 +6,7 @@ import { Button } from "../../globalStyles"
 import { Nav, NavContainer, NavLogo, MobileIcon, NavIcon, NavMenu, NavItem, NavLink, NavItemBtn, NavBtnLink} from "./navbarStyle"
 
 
-function Navbar(primary) {
+function Navbar() {
     const [show, setShow] = useState(false)
     const [button, setButton] = useState(true)
 
@@ -57,10 +57,10 @@ function Navbar(primary) {
                             <NavItemBtn>
                                 {button ? (
                                     <NavBtnLink to="/contact">
-                                        <Button primay={primary}>Contato</Button>
+                                        <Button primay>Contato</Button>
                                     </NavBtnLink>) : (
                                     <NavBtnLink to="/contact">
-                                        <Button big fontBig primary>Contato</Button>
+                                        <Button big fontBig primay>Contato</Button>
                                     </NavBtnLink>                                   
                                 )}                                
                             </NavItemBtn>

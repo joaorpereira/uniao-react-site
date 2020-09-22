@@ -29,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    background: ${({primary}) => (primary ? "#04D361" : "#04BF58")};
+    background: ${({primary}) => (primary ? "#1b1919" : "#04BF58")};
     padding: ${({big}) => (big ? "12px 80px" : "8px 15px")};
     font-size: ${({fontBig}) => (fontBig ? "20px" : "18px")};
     text-transform: ${(upperText) => (upperText ? "capitalize" : "uppercase" )};

@@ -41,7 +41,7 @@ export const HeadTitle = styled.h1`
 export const Post = styled.div`
     background-color: #fff;
     width: 300px;    
-    height: 500px;
+    height: 450px;
     display: flex;
     align-items: center;
     padding: 2rem 5rem;
@@ -51,7 +51,7 @@ export const Post = styled.div`
 
     @media screen and (max-width: 800px){
         margin-bottom: 4rem;
-        height: 450px;
+        height: 400px;
         width: 280px;       
         justify-items: flex-start;
     }
@@ -103,20 +103,12 @@ export const Title = styled.h1`
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 600;
-    margin: 1.5rem 0 0rem;
+    margin: 1rem 0rem;
     color: #1b1919;
 
     @media screen and (max-width: 800px){
         margin: 0;
     }
-`;
-
-export const SubTitle = styled.h2`
-    display: block;
-    color: #4facfe;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0.5rem 0;
 `;
 
 export const Paragraph = styled.p`

@@ -15,7 +15,7 @@ const FormContact = () => {
     const handleInput = (event) => {
         const { name, value } = event.target;    
         handleChange(name, value);
-      };
+    };
     
 
     const handleSubmit = (event) => {
