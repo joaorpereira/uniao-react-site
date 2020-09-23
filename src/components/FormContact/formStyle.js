@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const FormSection = styled.div`
     color: #1b1919;
-    padding: 50px 0px;
+    padding: 40px 0px;
     background: #fff;
-    height: 100vh;
+    height: 90vh;
     width:100%;
 
     @media screen and (max-width: 800px) {
-        padding: 35px 0px;
+        padding: 30px 0px;
     }
 `;
 
@@ -22,15 +22,18 @@ export const FormWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-    text-align:center;
-    margin-bottom: 3rem;
-    font-size: 28px;
-    line-height: 1.1;
+    margin-bottom: 0rem;
+    font-size: 25px;
+    line-height: 1;
+    text-align: right;
+    margin-right: 20%;
 
     @media screen and (max-width: 800px) {
-        font-size: 26px;
+        font-size: 25px;
         line-height: 1;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
+        text-align: center;
+        margin-right: 0;
     }
 `;
 
@@ -48,10 +51,11 @@ export const Form = styled.form`
     align-items: flex-start;
     flex-direction: column;
     max-width: 400px;
+    margin-top: 2.5rem;
 `;
 
 export const FormInput = styled.div`
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     width: 100%;

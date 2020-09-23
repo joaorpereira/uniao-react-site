@@ -46,6 +46,12 @@ export const Form = styled.form`
     align-items: center;
     width: 900px;
     margin-bottom: 2rem;
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0 30px;
+    }
 `;
 
 export const Label = styled.label`
@@ -79,6 +85,9 @@ export const Input = styled.input`
         color: #ccc;
         font-size: 1rem;
     }
+    @media screen and (max-width: 800px){
+        width: 220px;
+    }
 `;
 
 export const Select = styled.select`
@@ -105,6 +114,11 @@ export const Select = styled.select`
         outline: none;
         border: 1px solid #ccc;
         color: #ccc;
+    }
+
+    @media screen and (max-width: 800px){
+        width: 100px;
+        margin: 1rem 0;
     }
 `;
 
@@ -146,32 +160,24 @@ export const Img = styled.img`
     object-fit: cover;
 `;
 
-
 export const GaleryItem = styled.div`
     display: flex;
     justify-content: flex;
     align-items: flex-start;
-    padding: 10px 20px;
+    padding: 5px 20px;
     flex-direction: column;
     width: 100%;
 `;
 
 export const Title = styled.h1`
-    text-transform: uppercase;
-    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #1b1919;
 
     @media screen and (max-width: 800px){
         margin: 0;
     }
-`;
-
-export const Category = styled.h2`
-    display: block;
-    color: #4facfe;
-    font-size: 1rem;
-    font-weight: 600;
 `;
 
 export const Date = styled.p`

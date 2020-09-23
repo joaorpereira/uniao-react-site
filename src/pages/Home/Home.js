@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Section, Subscribe, Stories} from "../../components"
+import { Hero, Section, Subscribe, Stories, GamesSection} from "../../components"
 import {homeObjOne, aboutObj, galeryObj, gamesObj, storyObj} from './homeData'
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
             <Hero {...homeObjOne}/>
             <Section {...aboutObj}/>
             <Section {...galeryObj}/>
-            <Section {...gamesObj}/>
+            <GamesSection {...gamesObj}/>
             <Stories {...storyObj}/>
             <Subscribe/>
         </div>
