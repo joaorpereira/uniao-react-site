@@ -5,10 +5,9 @@ import useForm from '../../hooks/useForm'
 import { Button } from '../../globalStyles'
 
 const Galery = () => {
-    const pictures = galeryObj
+    const data = galeryObj
 
     const {values, resetState, handleChange} = useForm({
-        category: "",
         date: "",
         place: "",
     })
@@ -22,7 +21,9 @@ const Galery = () => {
         event.preventDefault()
         resetState()
     }
-   
+       
+    console.log(values.place)
+
     return (
         <>
             <GalerySection>
@@ -42,16 +43,20 @@ const Galery = () => {
                     <Button big fontBig>Enviar</Button>                       
                 </Form>              
                 <GaleryContainer>   
-                    {pictures.map(picture => (
-                        <GaleryCard key={picture.id}>   
+                    {data
+                        .filter(item => {
+                            return item.place.toLowerCase().indexOf(values.place) >= 0
+                        })
+                        .map(item => (
+                        <GaleryCard key={item.id}>   
                             <GaleryWrapper>
                                 <ImageWrapper>
-                                    <Img src={picture.image} alt={picture.alt}/>
+                                    <Img src={item.image} alt={item.alt}/>
                                 </ImageWrapper>
                                 <GaleryWrapper>
                                     <GaleryItem>
-                                        <Title>{picture.place}</Title>
-                                        <Date>{picture.date}</Date>
+                                        <Title>{item.place}</Title>
+                                        <Date>{item.date}</Date>
                                     </GaleryItem>
                                 </GaleryWrapper>
                             </GaleryWrapper>       

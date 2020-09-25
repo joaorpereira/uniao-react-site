@@ -33,6 +33,7 @@ export const NavLogo = styled(Link)`
 export const NavIcon = styled.img`
     height: 65%;
     filter: brightness(0) invert(1);
+    z-index: 9999;
 
     @media screen and (max-width: 960px){
         height: 60%;
@@ -50,6 +51,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 2rem;
         cursor: pointer;
+        z-index: 1000;
     }
 `;
 
@@ -57,20 +59,21 @@ export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
     list-style: none;  
-    justify-content:space-between;
+    justify-content: space-between;
 
     @media screen and (max-width: 960px){
         display: flex;
         justify-content:space-evenly;
         flex-direction: column;
         width: 100%;
-        height: 89vh;
+        top:50px;
+        height: 100vh;
         position: absolute;
-        top: 80px;
         left: ${({ show }) => ( show ? 0 : "-100%" )};
         opacity: 1;
         transition: all 0.3s ease;
         background: #004a2f;
+        z-index: 998;
     }
 `;
 
